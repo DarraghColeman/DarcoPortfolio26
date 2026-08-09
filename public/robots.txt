@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://darco-gold.vercel.app/sitemap.xml
