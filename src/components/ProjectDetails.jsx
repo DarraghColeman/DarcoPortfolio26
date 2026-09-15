@@ -66,7 +66,7 @@ const ProjectDetails = ({
   <video
     ref={videoRef}
     src={current.src}
-    className="absolute inset-0 object-cover w-full h-full"
+    className={`absolute inset-0 w-full h-full ${current.fit === "contain" ? "object-contain" : "object-cover"}`}
     controls
     loop
     onLoadedMetadata={(e) => {
@@ -78,7 +78,7 @@ const ProjectDetails = ({
     loading="lazy"
     src={current.src}
     alt="Gallery Image"
-    className="absolute inset-0 object-cover w-full h-full"
+    className={`absolute inset-0 w-full h-full ${current.fit === "contain" ? "object-contain" : "object-cover"}`}
   />
 )}
             </motion.div>

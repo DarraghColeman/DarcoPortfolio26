@@ -1,5 +1,102 @@
 export const myProjects = [
-  
+
+  //Project 7
+  {
+    id: 7,
+    title: "IoT & Robotics Start-up",
+    description:
+      "SolarPunk Labs.",
+    subDescription: [
+      "IoT/Robotics start-up collaboration",
+      "UI/UX research",
+      "Website and UI prototyping and development",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/SolarpLandingDevices.webp",
+    gallery: [
+      {
+        type: "video",
+        src: "/assets/projects/SolarpDevices.mp4",
+      },
+      {
+        type: "image",
+        src: "/assets/projects/SolarpLandingDesktop.webp",
+      },
+      {
+        type: "video",
+        src: "/assets/projects/SolarpFX.mp4",
+      },
+      {
+        type: "image",
+        src: "/assets/projects/SolarpLandingMobile.webp",
+        fit: "contain",
+      },
+      {
+        type: "image",
+        src: "/assets/projects/SolarpLandingTablet.webp",
+        fit: "contain",
+      },
+      {
+        type: "video",
+        src: "/assets/projects/SolarpDashbDesktop.mp4",
+        fit: "contain",
+      },
+      {
+        type: "image",
+        src: "/assets/projects/SolarpDashbDesktop.webp",
+        fit: "contain",
+      },
+      {
+        type: "image",
+        src: "/assets/projects/SolarpDashbDesktopWindow.webp",
+        fit: "contain",
+      },
+      {
+        type: "video",
+        src: "/assets/projects/SolarpMobile.mp4",
+        fit: "contain",
+      },
+    ],
+    tags: [
+      {
+        id: 1,
+        name: "Figma",
+        path: "/assets/logos/figma.svg",
+      },
+      {
+        id: 2,
+        name: "Illustrator",
+        path: "/assets/logos/illustrator.svg",
+      },
+      {
+        id: 3,
+        name: "Blender",
+        path: "/assets/logos/blender.svg",
+      },
+      {
+        id: 4,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 5,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 6,
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
+      },
+      {
+        id: 7,
+        name: "ThreeJS",
+        path: "/assets/logos/threejs.svg",
+      },
+    ],
+  },
+
   // Project 1
   {
     id: 1,
@@ -380,43 +477,6 @@ export const myProjects = [
         id: 5,
         name: "C#",
         path: "/assets/logos/csharp.svg",
-      },
-    ],
-  },
-  //Project 7
-  {
-    id: 7,
-    title: "Design, Branding & UI for start-up",
-    description:
-      "SolarPunk Labs.",
-    subDescription: [
-      "Collaboration with a local start up developing robotics, mechanical & electronics engineering and IoT",
-      "Design responsibilities of branding, logo, motion design and advertising in collaboration with the founders.",
-      "Website prototype and UI/UX design.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/comingSoon.webp",
-    tags: [
-      {
-        id: 1,
-        name: "Figma",
-        path: "/assets/logos/figma.svg",
-      },
-      {
-        id: 2,
-        name: "InDesign",
-        path: "/assets/logos/indesign.svg",
-      },
-      {
-        id: 3,
-        name: "Illustrator",
-        path: "/assets/logos/illustrator.svg",
-      },
-      {
-        id: 4,
-        name: "After Effects",
-        path: "/assets/logos/afterEffects.svg",
       },
     ],
   },

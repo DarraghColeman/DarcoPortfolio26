@@ -1,4 +1,9 @@
+import { useState } from "react";
+import CvDownloadModal from "../components/CvDownloadModal";
+
 const Footer = () => {
+  const [showCvModal, setShowCvModal] = useState(false);
+
   return (
     <section className="flex flex-col w-full items-center justify-center pt-2 md:pt-4 pb-10 sm:pb-6 text-sm text-neutral-400 c-space">
         <div className="socialsGlow">
@@ -29,14 +34,15 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between w-full gap-4 mt-4 text-center c-space sm:flex-row sm:text-left">
           <p>Location: <span className="location-glow">Lisbon</span></p>
           <p>Status: <span className="status-glow">Open for work</span></p>
-          <a
-            href="/assets/DarraghColeman-CV.pdf"
-            download
-            className="underline hover-animation location-glow"
+          <button
+            type="button"
+            onClick={() => setShowCvModal(true)}
+            className="underline cursor-pointer hover-animation location-glow"
           >
             Download CV
-          </a>
+          </button>
         </div>
+      {showCvModal && <CvDownloadModal closeModal={() => setShowCvModal(false)} />}
     </section>
   );
 };
