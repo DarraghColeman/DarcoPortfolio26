@@ -1,6 +1,6 @@
 "use client";
 import { useMotionValue, useSpring, useTransform, motion } from "motion/react";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const TimelineItem = ({ item }) => {
   const [isExpanded, setIsExpanded] = useState(false);

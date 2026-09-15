@@ -1,7 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
-import { Particles } from "../components/Particles";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +28,6 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
-      console.log("From submitted:", formData);
       await emailjs.send(
         "service_ebn5nnp",
         "template_mxmr7q5",
@@ -47,7 +45,7 @@ const Contact = () => {
       showAlertMessage("success", "You message has been sent!");
     } catch (error) {
       setIsLoading(false);
-      console.log(error);
+      console.error(error);
       showAlertMessage("danger", "Somthing went wrong!");
     }
   };
