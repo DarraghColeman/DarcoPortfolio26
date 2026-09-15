@@ -14,7 +14,7 @@ const Footer = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="" aria-label="Art Station">
+                    <a href="https://www.artstation.com/darco_viz" aria-label="Art Station">
                         <i className="fab fa-artstation"></i>
                     </a>
                 </li>
