@@ -89,7 +89,7 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-  className="block overflow-hidden text-center bg-gradient-to-b from-primary to-lavenderDark sm:hidden"
+  className="block overflow-hidden text-center border-b border-white/10 bg-primary/60 backdrop-blur-md sm:hidden"
   initial={{ opacity: 0, height: 0, y: -10 }}
   animate={{ opacity: 1, height: "auto", y: 0 }}
   exit={{ opacity: 0, height: 0, y: -10 }}
