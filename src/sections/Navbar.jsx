@@ -41,7 +41,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <div className="fixed inset-x-0 z-20 w-full bg-primary">
+    <div className="fixed inset-x-0 z-20 w-full border-b border-white/10 bg-primary/60 backdrop-blur-md">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
